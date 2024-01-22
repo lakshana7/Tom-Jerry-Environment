@@ -1,4 +1,6 @@
-<h1>RL Environment Description</h1>
+<h1>SARSA and Double-Q learning Algorithms implementation on RL Environment</h1>
+</br>
+<h2>Environment Description</h2>
 </br>
 <p>The “TomJerryEnvironment” is a grid-world depiction of a scene that was inspired by 
 vintage Tom and Jerry cartoons. The design of the grid is 6 by 6 and had several different 
@@ -49,7 +51,7 @@ can catch it. So, jerry escape from tom by choosing optimal greedy steps to reac
     <li>Ice creams for used to guide the jerry in safety actions.</li>
   </ul>
 </br>
-<h2>Sarsa and Double-Q learning Greedy actions</h2>
+<h2>Greedy actions Path</h2>
 <img src= "\greedy.png" alt = "Greedy actions">
 </br>
 <h2>Hyper-parameter tuning (Sarsa and DQ learning)</h2>
