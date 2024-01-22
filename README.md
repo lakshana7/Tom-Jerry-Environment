@@ -56,6 +56,17 @@ can catch it. So, jerry escape from tom by choosing optimal greedy steps to reac
 </br>
 <p>Hyper parameter tuning is done for both the algorithms where <b>Gamma values</b> are taken as [0.45, 0.65, 0.85]
 and <b>Decay values</b> are taken as [0.001,0.005, 0.01]</p>
+<ul>
+<li>The model which has greater gamma value than 0.85 and similarly, greater or 
+nearly equal value of decay = 0.01 is considerable for efficient exploration and exploitation 
+of agent in SARSA algorithm which is chosen as base model as there are minimum 
+fluctuations and learning rate of greedy actions is faster. </li>
+<li> The model which has greater gamma value than 0.85 and similarly, greater or 
+nearly equal value of decay = 0.01 is considerable for efficient exploration and exploitation 
+of agent in Double Q learning algorithm which is chosen as base model as there are 
+minimum fluctuations and learning rate of greedy actions is faster.</li>
+
+</ul>
 </br>
 <h2>Performance of both algorithms </h2>
 <img src = "\2.png">
