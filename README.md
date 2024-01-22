@@ -51,4 +51,48 @@ can catch it. So, jerry escape from tom by choosing optimal greedy steps to reac
 </br>
 <h2>Sarsa and Double-Q learning Greedy actions</h2>
 <img src= "\greedy.png" alt = "Greedy actions">
+</br>
+<h2>Hyper-parameter tuning (Sarsa and DQ learning)</h2>
+</br>
+<p>Hyper parameter tuning is done for both the algorithms where <b>Gamma values</b> are taken as [0.45, 0.65, 0.85]
+and <b>Decay values</b> are taken as [0.001,0.005, 0.01]</p>
+</br>
+<h2>Performance of both algorithms </h2>
+<img src = "\2.png">
+<ul>
+    <li>From the above graph it can be depicted that, at the initial phase of training which is 
+called exploration (trying new options for future better outcomes) the rewards collected 
+by Double Q-learning algorithm are much faster and bulkier than SARSA during 0 to 
+200 episodes. 
+ 
+ </li>
+    <li>For example, at episode 0 Sarsa started with 5 reward and DQ learning started from 0 
+cumulative rewards but as episodes started increasing Double Q- learning started gaining 
+more rewards whereas, SARSA fluctuated between 50-300 cumulative rewards. From 
+this, we can understand that Double Q- learning is good at exploration phase. </li>
+    <li>At episode nearly reaching 400 both algorithms converge towards stability during 
+exploitation phase and after episode 400 they both approximately collect almost same 
+cumulative rewards (i.e 21).</li>
 
+</ul>
+</br>
+<h2>N-Step SARSA Bootstrapping</h2>
+<img src ="3.png">
+<ul>
+    <li>From the above graph it can be depicted that, at the initial phase of training which is 
+called exploration (trying new options for future better outcomes) the rewards collected 
+by SARSA algorithm are much faster and bulkier than n-step SARSA during 0 to 200 
+episodes. 
+
+</li>
+    <li>For example, at episode 0 Sarsa started with 5 reward and n-step sarsa started from 0 
+cumulative rewards but as episodes started increasing n-step sarsa maximum achieved 
+reward is 21 which didn’t cross further but fluctuations are there as experiencing penalties 
+whereas, SARSA fluctuated between 50-300 cumulative rewards. From this, we can 
+understand that n-step SARSA is good at exploration phase. </li>
+    <li>At episode nearly reaching 400 both algorithms converge towards stability during 
+exploitation phase and after episode 400 they both approximately collect almost same 
+cumulative rewards (i.e 21) but interestingly, n-step attains permanent stability or optimal 
+reward value.</li>
+ 
+</ul>
