@@ -6,8 +6,10 @@ elements, such as cheese, ice cream, Jerry, Tom, and traps. Jerry's main objecti
 his way through the grid, dodging Tom's traps, gathering ice cream for reinforcement, and 
 eventually getting to the cheese for a significant reward. Jerry, the agent, has the capacity to 
 move in four directions: up, down, right, and left. Jerry's position, state-specific rewards, 
-and the general health of the grid are all monitored by the environment.  
-Agent: In this environment, jerry is our agent to collect maximum rewards during its 
+and the general health of the grid are all monitored by the environment. 
+</br> 
+</br>
+<b>Agent: </b>In this environment, jerry is our agent to collect maximum rewards during its 
 learning phase. 
 </br>
 <b>States:</b> On the grid, Jerry, ice cream cones, cheese, traps, and Tom remain in for the states.  
@@ -34,10 +36,11 @@ the way, and get to the cheese to get maximum rewards.</p>
 </br>
 <h2>Safety In Tom-Jerry Environment</h2>
 </br>
-<ul><p>First of all, there are only four possible actions in the action space (up, down, left, and right), 
+<p>First of all, there are only four possible actions in the action space (up, down, left, and right), 
 and the environment is set up to accommodate these actions. The agent can only navigate 
-within the 6x6 grid's defined state-space; it cannot access undefined or out-of-bounds states. </p>
-</br>
+within the 6x6 grid's defined state-space; it cannot access undefined or out-of-bounds states.</p>
+<ul> 
+
 <p>The agent learns the safety measures through rewards in the environment:</p>
     <li>When it reaches the rat trap position it gets killed or manipulated so it learns to avoid it 
 in further actions.</li>
@@ -45,4 +48,7 @@ in further actions.</li>
 can catch it. So, jerry escape from tom by choosing optimal greedy steps to reach cheese.</li>
     <li>Ice creams for used to guide the jerry in safety actions.</li>
   </ul>
+</br>
+<h2>Sarsa and Double-Q learning Greedy actions</h2>
+<img src= "\greedy.png" alt = "Greedy actions">
 
