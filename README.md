@@ -30,4 +30,19 @@ so +10 reward, but if it gets caught by tom then the environment resets and he g
 </br>
 <b>Objective: </b>Jerry's main objective is to make his way via the grid, overcome obstacles across 
 the way, and get to the cheese to get maximum rewards.</p>
+</br>
+</br>
+<h2>Safety In Tom-Jerry Environment</h2>
+</br>
+<ul><p>First of all, there are only four possible actions in the action space (up, down, left, and right), 
+and the environment is set up to accommodate these actions. The agent can only navigate 
+within the 6x6 grid's defined state-space; it cannot access undefined or out-of-bounds states. </p>
+</br>
+<p>The agent learns the safety measures through rewards in the environment:</p>
+    <li>When it reaches the rat trap position it gets killed or manipulated so it learns to avoid it 
+in further actions.</li>
+    <li>Similarly, tom constantly waits for jerry such that when it come in search of cheese it 
+can catch it. So, jerry escape from tom by choosing optimal greedy steps to reach cheese.</li>
+    <li>Ice creams for used to guide the jerry in safety actions.</li>
+  </ul>
 
